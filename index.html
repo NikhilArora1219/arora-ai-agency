@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arora AI Agency — autonomous agents shipping software</title>
+  <meta name="description" content="A software agency staffed by autonomous AI agents that take a spec and ship it. This page is the first thing they shipped.">
+  <meta property="og:title" content="Arora AI Agency">
+  <meta property="og:description" content="A software agency staffed by autonomous AI agents that take a spec and ship it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nikhilarora1219.github.io/arora-ai-agency/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28' font-family='system-ui,sans-serif'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #111;
+      --ink-soft: #555;
+      --rule: #e5e5e5;
+      --bg: #fafaf7;
+      --accent: #c84a1f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f1efe9;
+        --ink-soft: #a8a39a;
+        --rule: #2a2a28;
+        --bg: #111110;
+        --accent: #ff7a4d;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: ui-serif, "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    main {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 6rem;
+    }
+    header { margin-bottom: 4rem; }
+    .mark {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+      margin-bottom: 2.25rem;
+    }
+    .mark .dot { color: var(--accent); }
+    h1 {
+      font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      font-weight: 600;
+      margin: 0 0 1.25rem;
+    }
+    .sub {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      margin: 0;
+      max-width: 32rem;
+    }
+    section { margin: 3.5rem 0; }
+    h2 {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--ink-soft);
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    p { margin: 0 0 1rem; }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    li:last-child { border-bottom: none; }
+    li b {
+      display: block;
+      font-weight: 600;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.98rem;
+      margin-bottom: 0.15rem;
+    }
+    li span {
+      color: var(--ink-soft);
+      font-size: 0.98rem;
+    }
+    .shipped li b a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+    }
+    .shipped li b a:hover { color: var(--accent); }
+    .shipped time {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.02em;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .contact a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+    }
+    .contact a:hover { color: var(--accent); }
+    footer {
+      margin-top: 5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: var(--ink-soft);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    footer a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--ink-soft); }
+    footer a:hover { color: var(--accent); border-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark">Arora AI Agency <span class="dot">◆</span></div>
+      <h1>A software agency staffed by autonomous AI agents that take a spec and ship it.</h1>
+      <p class="sub">Most "AI agencies" wrap humans around a chatbot. We're inverting it: the agents do the work, the human reviews. This page is the first thing they shipped.</p>
+    </header>
+
+    <section>
+      <h2>What we can build today</h2>
+      <ul>
+        <li>
+          <b>Static frontends, shipped to a public URL.</b>
+          <span>HTML, CSS, hand-written or framework-driven. Live on GitHub Pages within one work cycle.</span>
+        </li>
+        <li>
+          <b>Web apps and APIs in TypeScript, Python, or Rust.</b>
+          <span>Node 22, Bun, Deno, modern Python, Rust 1.94. We pick the smallest stack that holds.</span>
+        </li>
+        <li>
+          <b>Spec → repo → CI → deploy, end to end.</b>
+          <span>The agents create the repo, write the code, open the PR, run the build, and hand back a URL.</span>
+        </li>
+        <li>
+          <b>Internal tools and CLIs.</b>
+          <span>Small, sharp tools that automate a specific workflow — without inheriting a SaaS subscription.</span>
+        </li>
+        <li>
+          <b>Honest scope estimates.</b>
+          <span>If something needs an account we don't have, a domain we don't own, or a key we can't get, we say so before we start.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="shipped">
+      <h2>What we shipped</h2>
+      <ul>
+        <li>
+          <time datetime="2026-05-15">2026 · 05 · 15</time>
+          <b><a href="https://github.com/NikhilArora1219/arora-ai-agency">arora-ai-agency</a></b>
+          <span>This page. Spec from the CEO agent, built and deployed by the founding engineer agent in a single heartbeat. Plain HTML/CSS, no build step, on GitHub Pages.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Get in touch</h2>
+      <p>Have a spec you want shipped? Write to <a href="mailto:hello@aroraai.com">hello@aroraai.com</a>.</p>
+    </section>
+
+    <footer>
+      <span>© 2026 Arora AI Agency</span>
+      <span><a href="https://github.com/NikhilArora1219/arora-ai-agency">View source</a></span>
+    </footer>
+  </main>
+</body>
+</html>
